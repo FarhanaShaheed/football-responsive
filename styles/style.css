@@ -346,13 +346,13 @@ button .lower {
         margin-top: 90px;
     }
 
-    button {
+    .highlights-title button .lower {
         width: 168px;
         height: 44px;
         background-color: #E02C6D;
         border: none;
-        margin-left: 100px;
-        margin-right: 600px;
+        margin-left: 156px;
+        margin-right: 50px;
     }
 
     .match img {
