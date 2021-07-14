@@ -1,0 +1,177 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header*/
+
+header {
+    height: 677px;
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    padding-left: 156px;
+    padding-top: 207px;
+    width: 485px;
+    height: 230px;
+}
+
+button {
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    border: none;
+    margin-left: 156px;
+    margin-top: 27px;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.banner img {
+    width: 556.01px;
+    height: 438px;
+    margin-top: 153px;
+    /* padding-right: 200px; */
+    transition: transfrom, linear;
+}
+
+.banner img:hover {
+    transform: scale(1.25) rotate(360deg);
+    transition: transform 2s ease-in-out;
+}
+
+/* main */
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.player-info {
+    width: 330px;
+    height: 500px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-top: 70px;
+    padding: 15px;
+    overflow-wrap: break-word;
+}
+
+.player-info img {
+    width: 300px;
+    height: 256px;
+}
+
+/* h3 {
+    font-weight: 700px;
+} */
+
+/* highlights */
+
+.highlights {
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlights-title {
+    width: 466px;
+    height: 309px;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+
+.highlights-title h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 48px;
+
+}
+
+button .lower {
+    margin-left: 100px;
+}
+
+.match img {
+    width: 567px;
+    height: 427px;
+    margin-top: 165px;
+    margin-right: 156px;
+}
+
+/* photo-album */
+
+.photo-album {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row-gap: 40px;
+}
+
+.gallery h1 {
+    color: #2D25A0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.photo-album img {
+    width: 150px;
+    border: 10px solid #2D25A0;
+}
+
+/* News*/
+.news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.daily-news {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 200px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.daily-news img {
+    width: 150px;
+}
+
+/* footer */
+
+.logo img {
+    width: 483.87px;
+    height: 110px;
+    margin-left: 475px;
+    margin-top: 163px;
+}
+
+.social-icons {
+    display: flex;
+    margin-left: 630px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    padding-right: 14px;
+
+}
+
+footer .copy {
+    padding-left: 600px;
+}
