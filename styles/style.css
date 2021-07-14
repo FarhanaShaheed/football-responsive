@@ -11,20 +11,35 @@ body {
 /* header*/
 
 header {
-    height: 677px;
+
     background-color: #2D25A0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+
 }
 
-h1 {
+.top {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 677px;
+}
+
+.title {
+    flex: 50%;
+
+}
+
+.title h1 {
     font-size: 64px;
     font-weight: bold;
     color: white;
-    padding-left: 156px;
-    padding-top: 207px;
-    width: 485px;
-    height: 230px;
+    margin-left: 156px;
+
+
 }
 
 button {
@@ -42,10 +57,14 @@ button a {
     font-size: 16px;
 }
 
+.banner {
+    flex: 50%;
+}
+
 .banner img {
     width: 556.01px;
     height: 438px;
-    margin-top: 153px;
+    /* margin-top: 153px; */
     /* padding-right: 200px; */
     transition: transfrom, linear;
 }
@@ -60,6 +79,7 @@ button a {
 .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    place-items: center;
 
 }
 
@@ -73,7 +93,7 @@ button a {
 }
 
 .player-info img {
-    width: 300px;
+    width: 100%;
     height: 256px;
 }
 
@@ -117,8 +137,13 @@ button .lower {
 
 .photo-album {
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(6, 1fr);
-    grid-row-gap: 40px;
+    place-items: center;
+    grid-gap: 40px 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+
 }
 
 .gallery h1 {
@@ -128,41 +153,67 @@ button .lower {
 }
 
 .photo-album img {
-    width: 150px;
-    border: 10px solid #2D25A0;
+    width: 100%;
+    border: 5px solid #584fd8;
 }
 
 /* News*/
+.broadcast h1 {
+    color: #2D25A0;
+    text-align: center;
+}
+
 .news {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 20px;
 }
 
-.daily-news {
-    display: flex;
-    justify-content: space-between;
-    width: 500px;
-    height: 200px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+.sports {
+    width: 300px;
+    height: 225px;
+    border: 5px solid #584fd8;
+    position: relative;
 }
 
-.daily-news img {
-    width: 150px;
+.news img {
+    width: 100%;
+}
+
+.channel-detail {
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 0;
+}
+
+.channel-detail h3 {
+    background-color: white;
+    text-align: center;
+}
+
+.sports:hover .channel-detail {
+    display: block;
+    background-color: rgba(255, 182, 193, 0.663);
 }
 
 /* footer */
 
+.football-logo {
+    display: flex;
+    justify-content: center;
+}
+
 .logo img {
-    width: 483.87px;
-    height: 110px;
-    margin-left: 475px;
-    margin-top: 163px;
+    margin-top: 40px;
+    width: 483px;
 }
 
 .social-icons {
     display: flex;
     margin-left: 630px;
+    justify-content: flex-start;
 }
 
 .social-icons img {
@@ -172,6 +223,56 @@ button .lower {
 
 }
 
-footer .copy {
-    padding-left: 600px;
+.copy {
+    text-align: center;
+}
+
+/* media query */
+
+/* mobile device */
+@media only screen and (max-width:600px) {
+    header {
+        background-color: chartreuse;
+        flex-direction: column;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+
+    }
+
+    .photo-album {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .news {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .highlights {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:992px) {
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+
+    }
+
+    .photo-album {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+
+    .news {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
 }
